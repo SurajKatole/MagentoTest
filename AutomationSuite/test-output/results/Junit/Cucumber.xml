@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="7" time="145.2">
+    <testcase classname="Sign Up New User" name="SignUp for magento with All blank fields" time="83.082">
+        <system-out><![CDATA[Given User accesses the site url in browser.................................passed
+When User chooses create a new account option...............................passed
+Then User enters First Name as "<firstName>" and Last Name as "<lastName>"..passed
+And User enters Email as "<email>" and Password as "<password>" and confirm password as "<password>" then clicks create account button.passed
+And User verifies for failed Sign Up........................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Sign Up New User" name="SignUp for magento with Name fields blank" time="6.848">
+        <system-out><![CDATA[Given User navigates the site url in browser................................passed
+When User chooses create a new account option...............................passed
+Then User enters First Name as "" and Last Name as "".......................passed
+And User enters Email as "newemail8987@gmail.com" and Password as "Password@1234" and confirm password as "Password@1234" then clicks create account button.passed
+And User verifies for failed Sign Up........................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Sign Up New User" name="SignUp for magento with Email field blank" time="7.294">
+        <system-out><![CDATA[Given User navigates the site url in browser................................passed
+When User chooses create a new account option...............................passed
+Then User enters First Name as "Suraj" and Last Name as "Katole"............passed
+And User enters Email as "<email>" and Password as "Password@1234" and confirm password as "Password@1234" then clicks create account button.passed
+And User verifies for failed Sign Up........................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Sign Up New User" name="SignUp for magento with Password fields blank" time="6.655">
+        <system-out><![CDATA[Given User navigates the site url in browser................................passed
+When User chooses create a new account option...............................passed
+Then User enters First Name as "Suraj" and Last Name as "Katole"............passed
+And User enters Email as "newemail8987@gmail.com" and Password as "<password>" and confirm password as "<password>" then clicks create account button.passed
+And User verifies for failed Sign Up........................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Sign Up New User" name="SignUp for magento with Invalid Email" time="7.033">
+        <system-out><![CDATA[Given User navigates the site url in browser................................passed
+When User chooses create a new account option...............................passed
+Then User enters First Name as "Suraj" and Last Name as "Katole"............passed
+And User enters Email as "newemail8987" and Password as "Password@1234" and confirm password as "Password@1234" then clicks create account button.passed
+And User verifies for failed Sign Up........................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Sign Up New User" name="SignUp for magento with Different Password and Confirm password field" time="7.209">
+        <system-out><![CDATA[Given User navigates the site url in browser................................passed
+When User chooses create a new account option...............................passed
+Then User enters First Name as "Suraj" and Last Name as "Katole"............passed
+And User enters Email as "newemail8987@gmail.com" and Password as "Password@1234" and confirm password as "Password@123" then clicks create account button.passed
+And User verifies for failed Sign Up........................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Sign Up New User" name="SignUp for magento with valid credentials" time="26.484">
+        <system-out><![CDATA[Given User navigates the site url in browser................................passed
+When User chooses create a new account option...............................passed
+Then User enters First Name as "Suraj" and Last Name as "Katole"............passed
+And User enters Email as "newemailone1431@gmail.com" and Password as "Password@1234" and confirm password as "Password@1234" then clicks create account button.passed
+Then User verifies if Signed Up Successfully................................passed
+Then User signs out of the application......................................passed
+Then User closes the browser................................................passed
+]]></system-out>
+    </testcase>
+</testsuite>
