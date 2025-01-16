@@ -77,7 +77,7 @@ Feature: Sign Up New User
     Then User closes the browser
     Examples:
       | firstName | lastName | email                | password      |
-      | Suraj     | Katole   | newemailone1431@gmail.com | Password@1234 |
+      | Suraj     | Katole   | newemail12suraj@gmail.com | Password@1234 |
 
 
 #
